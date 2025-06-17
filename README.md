@@ -119,34 +119,65 @@ Opens at: `http://localhost:5173`
 ### 🌐 Frontend (`handyhub-vite-frontend`)
 
 ```bash
-📦 handyhub-vite-frontend/
-├── 📁 public/
-├── 📁 src/
-│   ├── 📁 assets/
-│   ├── 📁 components/
-│   ├── 📁 data/
-│   ├── 📁 pages/
-│   ├── 📁 services/
-│   ├── 🎨 App.css
-│   ├── ⚛️ App.jsx
-│   ├── 🎨 index.css
-│   └── 🚀 main.jsx
-├── 📄 package.json
-├── ⚙️ vite.config.js
-└── 📝 README.md
+handyhub-frontend/
+├── public/
+│   ├── handyhub-favicon.svg
+│   └── handyhub-hero.jpg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.css
+│   ├── data/
+│   │   └── categories.js
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   ├── AllProblemsPage.jsx
+│   │   ├── PostProblemPage.jsx
+│   │   ├── MyProblemsPage.jsx
+│   │   ├── ContactUsPage.jsx
+│   │   └── *.css (for each page)
+│   ├── services/
+│   │   └── problem.service.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .env
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
 ### 📁 Backend (`handyhub-backend`)
 
 ```bash
-📦 handyhub-backend/
-├── 📁 src/
-│   ├── 📁 main/
-│   │   ├── 📁 java/
-│   │   │   └── 📁 com/handyhub/backend/
-│   │   └── 📁 resources/
-│   │       └── 📄 application.properties
-├── 📄 pom.xml
+handyhub-backend/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── handyhub/
+│       │           └── backend/
+│       │               ├── HandyhubBackendApplication.java
+│       │               ├── config/
+│       │               │   └── WebConfig.java
+│       │               ├── controller/
+│       │               │   └── ProblemController.java
+│       │               ├── dto/
+│       │               │   └── StatusUpdateRequest.java
+│       │               ├── entity/
+│       │               │   └── Problem.java
+│       │               ├── repository/
+│       │               │   └── ProblemRepository.java
+│       │               └── service/
+│       │                   └── ProblemService.java
+│       └── resources/
+│           └── application.properties
+├── pom.xml
+└── README.md
 ```
 
 ---
