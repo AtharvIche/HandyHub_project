@@ -1,0 +1,236 @@
+
+.home-page {
+  padding: 20px;
+  text-align: left;
+}
+
+.home-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #004d40;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 30px;
+    min-width: 300px; /* Ensure text section has some width */
+}
+
+.intro-text h2 {
+    font-size: 2.8em; /* Larger "Web Design" like text */
+    color: #2c3e50; /* Dark blueish grey */
+    margin-bottom: 10px;
+}
+
+.intro-text .subtitle {
+    font-size: 1.5em;
+    color: #00796b; /* Teal subtitle */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.intro-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.intro-text .learn-more-button {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.intro-text .learn-more-button:hover {
+    background-color: #004d40;
+}
+
+.intro-image-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px; /* Ensure image section has some width */
+}
+.intro-image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.problem-list-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #004d40;
+}
+
+.problem-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.problem-card {
+  background-color: #ffffff;
+  border: 1px solid #b2dfdb;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.problem-card h3 {
+  margin-top: 0;
+  color: #00796b; /* Teal for category */
+}
+
+.problem-card p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.problem-card strong {
+  color: #004d40; /* Darker teal for labels like Location, Contact */
+}
+
+/* src/pages/HomePage.css - Add these styles */
+
+.home-problem-card.status-solved {
+    opacity: 0.7; /* Make solved problems a bit faded */
+    border-left: 5px solid #6c757d; /* Grey border for solved items on home */
+  }
+  .home-problem-card.status-pending {
+    border-left: 5px solid #007bff; /* Blue border for pending items on home */
+  }
+  
+  .problem-status-indicator {
+    margin-top: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .status-text-pending {
+    color: #007bff; /* Blue */
+  }
+  
+  .status-text-solved {
+    color: #28a745; /* Green */
+  }
+  
+  /* You might want to adjust the main problem-card styles in HomePage.css as well
+     if they conflict or if you want them to look different from MyProblemsPage cards */
+
+     /* src/pages/HomePage.css - Add/Modify */
+/* ... existing styles ... */
+
+.intro-text .browse-tasks-button {
+    background-color: #5cb85c; /* A different color for the browse button */
+}
+.intro-text .browse-tasks-button:hover {
+    background-color: #4cae4c;
+}
+
+.how-it-works-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.how-it-works-section h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow steps to wrap on smaller screens */
+}
+
+.step {
+    flex: 1;
+    min-width: 250px; /* Minimum width for each step */
+    max-width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step h3 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+/* src/pages/HomePage.css - ensure these styles for the image are present or adjusted */
+
+.intro-image-placeholder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px; /* Adjust if needed based on how the image looks */
+  padding-left: 20px; /* Space between text and image */
+}
+
+.hero-illustration {
+  max-width: 100%;
+  height: auto;     /* Maintain aspect ratio */
+  max-height: 400px; /* Optional: to prevent overly tall images */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 77, 64, 0.15);
+  object-fit: cover; /* Ensures the image covers the area, might crop */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro-section {
+      flex-direction: column-reverse; /* Image on top on mobile */
+  }
+  .intro-image-placeholder {
+      padding-left: 0;
+      margin-bottom: 30px;
+      width: 100%; /* Make image container take full width */
+  }
+  .hero-illustration {
+      max-height: 300px; /* Adjust for mobile if needed */
+  }
+  .intro-text {
+      padding-right: 0;
+      text-align: center;
+  }
+}

@@ -1,0 +1,126 @@
+/* src/pages/MyProblemsPage.css */
+
+.my-problems-page {
+    padding: 20px;
+  }
+  
+  .my-problems-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004d40;
+  }
+  
+  .no-problems-message {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+  }
+  
+  .no-problems-message p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .post-new-problem-button {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-new-problem-button:hover {
+    background-color: #004d40;
+  }
+  
+  .problem-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .problem-card {
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex; /* Added for better internal layout */
+    flex-direction: column; /* Added for better internal layout */
+  }
+  
+  .my-problem-card .problem-status {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .my-problem-card .problem-status span {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Status-specific styling */
+  .my-problem-card.status-pending .problem-status span {
+    background-color: #ffc107; /* Yellow for pending */
+    color: #333;
+  }
+  .my-problem-card.status-solved .problem-status span {
+    background-color: #28a745; /* Green for solved */
+  }
+  .my-problem-card.status-solved {
+    border-left: 5px solid #28a745; /* Green left border for solved items */
+  }
+  .my-problem-card.status-pending {
+    border-left: 5px solid #ffc107; /* Yellow left border for pending items */
+  }
+  
+  
+  .my-problem-card .problem-actions {
+    margin-top: auto; /* Pushes actions to the bottom if card height varies */
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between; /* Spreads out buttons */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .my-problem-card .problem-actions button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .my-problem-card .status-button {
+    color: white;
+  }
+  .my-problem-card .solved-button {
+    background-color: #28a745; /* Green */
+  }
+  .my-problem-card .solved-button:hover {
+    background-color: #218838;
+  }
+  .my-problem-card .pending-button {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+  }
+  .my-problem-card .pending-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .my-problem-card .delete-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+  }
+  .my-problem-card .delete-button:hover {
+    background-color: #c82333;
+  }

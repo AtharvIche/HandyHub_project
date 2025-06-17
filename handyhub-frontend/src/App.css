@@ -1,0 +1,14 @@
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure App takes full height if #root is set to flex */
+}
+
+.app-content {
+  padding-top: 80px; /* Adjust if navbar height changes */
+  flex-grow: 1; /* Allows content to take available space */
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); /* Gradient similar to image */
+  width: 100%;
+}
