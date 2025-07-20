@@ -52,7 +52,7 @@
 ### 1. 📦 Backend Setup
 
 ```bash
-git clone https://github.com/adiTyaIcHe07/HandyHub_Project.git
+git clone https://github.com/AtharvIche/HandyHub_project.git
 cd HandyHub_Project/backend
 ```
 
@@ -201,4 +201,4 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🔗 Built with ❤️ by Aditya Iche – [GitHub](https://github.com/adiTyaIcHe07)
+## 🔗 Built with ❤️ by Atharv Iche – [GitHub](https://github.com/AtharvIche)
